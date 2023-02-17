@@ -64,8 +64,11 @@ a {
     display: inline-block;
     position: relative;
     text-align: left;
-    transform: translateX(130%);
     flex-wrap: wrap;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
 }
 
 #about-me ul li {
@@ -187,7 +190,7 @@ footer h4 {
 }
 
 /* Media query */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 
     #about-me {
         overflow: scroll;
@@ -200,11 +203,12 @@ footer h4 {
 
     #about-me ul {
         position: relative;
-        justify-self: start;
         display: block;
-        transform: translateX(0);
         flex-wrap: wrap;
-        margin-top: 30px;
+        line-height: 30px;
+        left: 0;
+        top: 35px;
+
     }
 
     #about-me h2 {
